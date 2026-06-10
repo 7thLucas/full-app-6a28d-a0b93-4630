@@ -1,0 +1,73 @@
+<style>
+  .mode-landscape .sl-layout {
+    flex-direction: row;
+  }
+  .mode-portrait .sl-layout {
+    flex-direction: column;
+  }
+  .mode-landscape .sl-content-col {
+    width: 52%;
+    padding: 3rem 2.5rem 3rem 3.5rem;
+  }
+  .mode-landscape .sl-visual-col {
+    width: 48%;
+  }
+  .mode-portrait .sl-content-col {
+    width: 100%;
+    padding: 2.5rem 2rem 1.5rem;
+  }
+  .mode-portrait .sl-visual-col {
+    width: 100%;
+    height: 40%;
+  }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left: Content -->
+    <div class="sl-content-col flex flex-col justify-between">
+      <!-- Top: Badge + headline -->
+      <div class="flex flex-col gap-5 pt-2">
+        <span class="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-amber-700 bg-amber-50 border border-amber-200 rounded-full px-3 py-1 w-fit">
+          Indonesia-First · B2B2C Platform
+        </span>
+
+        <h1 class="text-5xl font-black leading-tight text-slate-900" style="font-family: 'Georgia', serif; letter-spacing: -0.02em;">
+          Order a coffee.<br/>
+          <span style="color: #b45309;">Unlock AI</span><br/>
+          for 5 hours.
+        </h1>
+
+        <p class="text-base text-slate-600 leading-relaxed max-w-sm">
+          CaféAI turns every receipt into an AI session pass — no account, no friction,
+          just a code. For café-goers in Indonesia's most productive cafés.
+        </p>
+
+        <div class="flex gap-3 flex-wrap mt-1">
+          <span class="text-xs font-medium bg-slate-100 text-slate-700 rounded-full px-3 py-1">WFC Workers</span>
+          <span class="text-xs font-medium bg-slate-100 text-slate-700 rounded-full px-3 py-1">College Students</span>
+          <span class="text-xs font-medium bg-slate-100 text-slate-700 rounded-full px-3 py-1">Café Operators</span>
+        </div>
+      </div>
+
+      <!-- Bottom: Attribution -->
+      <div class="pb-2">
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Right: Visual -->
+    <div class="sl-visual-col relative overflow-hidden flex items-center justify-center">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=A%20cozy%20modern%20Indonesian%20cafe%20with%20warm%20amber%20lighting%2C%20a%20laptop%20open%20on%20the%20table%20showing%20a%20clean%20AI%20chat%20interface%2C%20a%20coffee%20cup%20beside%20it%2C%20receipt%20paper%20with%20a%20code%20printed%20on%20it%2C%20calm%20and%20editorial%20atmosphere%2C%20top-down%20perspective%2C%20soft%20depth%20of%20field"
+        alt="CaféAI in use at a café"
+        class="w-full h-full object-cover"
+        style="border-radius: 0 0 0 2rem;"
+      />
+      <!-- Overlay gradient for text legibility near edges -->
+      <div class="absolute inset-0 pointer-events-none" style="background: linear-gradient(to right, rgba(255,255,255,0.18) 0%, transparent 30%);"></div>
+    </div>
+
+  </div>
+</section>
