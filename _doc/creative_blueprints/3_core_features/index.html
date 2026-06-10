@@ -1,0 +1,80 @@
+<style>
+  .mode-landscape .sl-layout {
+    flex-direction: column;
+    padding: 2.5rem 3.5rem;
+  }
+  .mode-portrait .sl-layout {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .mode-landscape .sl-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .mode-portrait .sl-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex flex-col h-full">
+
+    <!-- Header -->
+    <div class="mb-5">
+      <span class="text-xs font-semibold tracking-widest uppercase text-amber-700">Platform Features</span>
+      <h2 class="text-3xl font-black text-slate-900 mt-1" style="font-family: 'Georgia', serif; letter-spacing: -0.01em;">Built for everyone in the room.</h2>
+    </div>
+
+    <!-- Persona Chips -->
+    <div class="flex gap-2 mb-5 flex-wrap">
+      <button class="px-4 py-1.5 rounded-full text-sm font-semibold text-white" style="background:#b45309;">Café Customer</button>
+      <button class="px-4 py-1.5 rounded-full text-sm font-semibold text-slate-600 bg-slate-100">Café Operator</button>
+      <button class="px-4 py-1.5 rounded-full text-sm font-semibold text-slate-600 bg-slate-100">Power User / Dev</button>
+    </div>
+
+    <!-- Feature Grid — Customer persona active -->
+    <div class="sl-grid grid gap-4 flex-1">
+
+      <div class="rounded-2xl border border-amber-200 bg-amber-50 p-5 flex flex-col gap-2">
+        <div class="w-9 h-9 rounded-xl flex items-center justify-center text-lg" style="background:#b45309; color:#fff;">🎫</div>
+        <p class="text-sm font-bold text-slate-900">Code-Based Access</p>
+        <p class="text-xs text-slate-600 leading-relaxed">No account, no password. Enter the code from your receipt and you're in — instantly.</p>
+      </div>
+
+      <div class="rounded-2xl border border-slate-200 bg-white p-5 flex flex-col gap-2 shadow-sm">
+        <div class="w-9 h-9 rounded-xl flex items-center justify-center text-lg bg-slate-900">⏱</div>
+        <p class="text-sm font-bold text-slate-900">5-Hour Session</p>
+        <p class="text-xs text-slate-600 leading-relaxed">Unlimited AI chat timed from first activation — matches a full WFC or study session.</p>
+      </div>
+
+      <div class="rounded-2xl border border-slate-200 bg-white p-5 flex flex-col gap-2 shadow-sm">
+        <div class="w-9 h-9 rounded-xl flex items-center justify-center text-lg" style="background:#0f766e; color:#fff;">💬</div>
+        <p class="text-sm font-bold text-slate-900">Familiar Chat UI</p>
+        <p class="text-xs text-slate-600 leading-relaxed">Clean message bubbles, in-session history, and markdown rendering — just like the tools you already use.</p>
+      </div>
+
+      <div class="rounded-2xl border border-slate-200 bg-white p-5 flex flex-col gap-2 shadow-sm">
+        <div class="w-9 h-9 rounded-xl flex items-center justify-center text-lg" style="background:#4f46e5; color:#fff;">🔗</div>
+        <p class="text-sm font-bold text-slate-900">API Connectivity</p>
+        <p class="text-xs text-slate-600 leading-relaxed">Power users can connect the session token to their own AI agents and workflows via REST API.</p>
+      </div>
+
+    </div>
+
+    <!-- Bottom divider with operator hint -->
+    <div class="mt-4 pt-3 border-t border-slate-100 flex gap-6">
+      <div class="flex items-center gap-2 text-xs text-slate-500">
+        <div class="w-2 h-2 rounded-full bg-amber-400"></div>
+        Auto-generated unique codes per purchase
+      </div>
+      <div class="flex items-center gap-2 text-xs text-slate-500">
+        <div class="w-2 h-2 rounded-full bg-teal-500"></div>
+        Café dashboard: usage stats &amp; redemption rates
+      </div>
+      <div class="flex items-center gap-2 text-xs text-slate-500">
+        <div class="w-2 h-2 rounded-full bg-indigo-500"></div>
+        POS webhook / REST integration
+      </div>
+    </div>
+
+  </div>
+</section>
