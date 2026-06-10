@@ -1,0 +1,95 @@
+<style>
+  .mode-landscape .sl-layout {
+    flex-direction: row;
+  }
+  .mode-portrait .sl-layout {
+    flex-direction: column;
+  }
+  .mode-landscape .sl-left {
+    width: 55%;
+    padding: 3rem 2.5rem 3rem 3.5rem;
+  }
+  .mode-landscape .sl-right {
+    width: 45%;
+    padding: 2.5rem 2.5rem 2.5rem 1.5rem;
+  }
+  .mode-portrait .sl-left,
+  .mode-portrait .sl-right {
+    width: 100%;
+    padding: 1.5rem 2rem;
+  }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left: Problem + Solution -->
+    <div class="sl-left flex flex-col justify-center gap-8">
+
+      <!-- Eyebrow -->
+      <div>
+        <span class="text-xs font-semibold tracking-widest uppercase text-amber-700">The Opportunity</span>
+      </div>
+
+      <!-- Problem -->
+      <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+        <div class="flex items-center gap-2 mb-3">
+          <div class="w-7 h-7 rounded-full flex items-center justify-center text-white text-xs font-bold" style="background:#dc2626;">!</div>
+          <span class="text-xs font-semibold uppercase tracking-widest text-slate-500">The Problem</span>
+        </div>
+        <p class="text-lg font-bold text-slate-900 leading-snug mb-2">
+          AI tools are everywhere — but still locked behind accounts and paywalls.
+        </p>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Students and remote workers spending their day in cafés want AI help <em>right now</em>,
+          but ChatGPT and Claude require sign-ups, subscriptions, or rate-limited free tiers.
+          The café is the workspace — but AI doesn't come with the coffee.
+        </p>
+      </div>
+
+      <!-- Solution -->
+      <div class="rounded-2xl p-6 text-white" style="background: linear-gradient(135deg, #b45309 0%, #92400e 100%);">
+        <div class="flex items-center gap-2 mb-3">
+          <div class="w-7 h-7 rounded-full flex items-center justify-center bg-white text-amber-800 text-xs font-bold">✓</div>
+          <span class="text-xs font-semibold uppercase tracking-widest text-amber-200">The Solution</span>
+        </div>
+        <p class="text-lg font-bold leading-snug mb-2">
+          CaféAI — a receipt code is an AI session pass.
+        </p>
+        <p class="text-sm text-amber-100 leading-relaxed">
+          One purchase generates one unique code. Redeem it at caféai.id, and you get
+          5 hours of unlimited AI chat — no account, no install, no friction.
+          The café is the distribution channel; the receipt is the key.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Right: Visual + quick stats -->
+    <div class="sl-right flex flex-col justify-center gap-6">
+      <div class="rounded-2xl overflow-hidden" style="height: 220px;">
+        <img
+          src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=A%20college%20student%20sitting%20at%20a%20cafe%20table%20in%20Jakarta%2C%20holding%20a%20printed%20receipt%2C%20laptop%20open%20with%20an%20AI%20chat%20interface%2C%20coffee%20cup%20nearby%2C%20warm%20and%20focused%20atmosphere%2C%20editorial%20photo%20style"
+          alt="Student using CaféAI"
+          class="w-full h-full object-cover"
+        />
+      </div>
+
+      <div class="grid grid-cols-2 gap-3">
+        <div class="rounded-xl bg-amber-50 border border-amber-200 p-4 text-center">
+          <p class="text-2xl font-black text-amber-800">5 hrs</p>
+          <p class="text-xs text-amber-700 mt-1">Unlimited session<br/>per purchase</p>
+        </div>
+        <div class="rounded-xl bg-slate-900 p-4 text-center">
+          <p class="text-2xl font-black text-white">0</p>
+          <p class="text-xs text-amber-300 mt-1">Accounts needed<br/>to start chatting</p>
+        </div>
+        <div class="rounded-xl bg-slate-100 border border-slate-200 p-4 text-center col-span-2">
+          <p class="text-sm font-semibold text-slate-800">Indonesia-first launch</p>
+          <p class="text-xs text-slate-500 mt-1">Jakarta · Bandung · Yogyakarta · Surabaya</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
