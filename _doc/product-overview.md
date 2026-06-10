@@ -43,9 +43,10 @@ The platform includes:
 | For customers | For café operators |
 |---|---|
 | Free, high-quality AI access tied to a real purchase | A compelling, low-cost loyalty differentiator |
-| No account sign-up — just a code | Drives higher ticket sizes (purchase = AI unlock) |
-| 5-hour unlimited window fits a WFC/study session perfectly | Simple integration — print code on existing receipt printer |
-| Familiar ChatGPT-style interface | API access for more advanced venue setups |
+| No account sign-up — just a code | **Drives new foot traffic** — people actively choose "the café with AI" when deciding where to work or study |
+| 5-hour unlimited window fits a WFC/study session perfectly | Drives higher ticket sizes (purchase = AI unlock) |
+| Familiar ChatGPT-style interface | Increases dwell time — AI workers stay longer and order more |
+| Completes real work (writing, coding, research) for the price of a coffee | Simple integration — print code on existing receipt printer; no hardware investment |
 
 ---
 
