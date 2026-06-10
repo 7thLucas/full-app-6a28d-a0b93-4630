@@ -8,6 +8,12 @@
 
 ---
 
+## Problem Statement
+
+Indonesia adalah salah satu adopter AI terbesar di dunia. Banyak orang melakukan WFC (Work From Café) atau mengerjakan tugas kuliah di kafe karena ada wifi gratis yang kencang dan suasana kerja yang nyaman. Masalahnya, AI berlangganan itu mahal — mahasiswa dan remote worker butuh akses AI tapi tidak mau bayar subscription bulanan. Solusinya: cukup beli kopi, dapat kode unik dari struk, dan langsung akses AI unlimited selama 5 jam. Produktivitas maksimal dengan harga secangkir kopi.
+
+---
+
 ## What It Is
 CaféAI is a café-integrated, session-based AI access platform. When a customer purchases any item at a participating café and receives their receipt, they get a unique, auto-generated alphanumeric code printed on the receipt. They enter that code on the CaféAI web platform and instantly gain **unlimited AI chat access for 5 hours** — with no account required.
 
