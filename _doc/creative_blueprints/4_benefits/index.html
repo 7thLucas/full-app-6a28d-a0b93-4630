@@ -1,0 +1,86 @@
+<style>
+  .mode-landscape .sl-layout {
+    flex-direction: column;
+    padding: 2.5rem 3.5rem;
+  }
+  .mode-portrait .sl-layout {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .mode-landscape .sl-metrics-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .mode-portrait .sl-metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex flex-col h-full">
+
+    <!-- Header -->
+    <div class="mb-5">
+      <span class="text-xs font-semibold tracking-widest uppercase text-amber-700">Value & Impact</span>
+      <h2 class="text-3xl font-black text-slate-900 mt-1" style="font-family: 'Georgia', serif; letter-spacing: -0.01em;">The numbers behind the cup.</h2>
+    </div>
+
+    <!-- Metrics Grid -->
+    <div class="sl-metrics-grid grid gap-4 mb-4">
+
+      <div class="rounded-2xl p-5 text-white flex flex-col gap-1" style="background: linear-gradient(135deg, #b45309, #92400e);">
+        <span class="text-xs font-semibold uppercase tracking-wider text-amber-200">Access Speed</span>
+        <span class="text-3xl font-black">&lt;30s</span>
+        <span class="text-xs text-amber-100 leading-relaxed">From receipt in hand to first AI message — no sign-up, no install.</span>
+      </div>
+
+      <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5 flex flex-col gap-1">
+        <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Session Length</span>
+        <span class="text-3xl font-black text-slate-900">5 hrs</span>
+        <span class="text-xs text-slate-500 leading-relaxed">Matches the typical WFC or study session — full day productivity in one purchase.</span>
+      </div>
+
+      <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5 flex flex-col gap-1">
+        <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Operator Setup</span>
+        <span class="text-3xl font-black text-slate-900">1 hook</span>
+        <span class="text-xs text-slate-500 leading-relaxed">One webhook or REST call from any POS system to generate and deliver codes automatically.</span>
+      </div>
+
+      <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5 flex flex-col gap-1">
+        <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Accounts Required</span>
+        <span class="text-3xl font-black text-slate-900">Zero</span>
+        <span class="text-xs text-slate-500 leading-relaxed">Customers never create an account. Zero GDPR overhead, zero drop-off from sign-up friction.</span>
+      </div>
+
+    </div>
+
+    <!-- ROI Summary Block -->
+    <div class="rounded-2xl bg-slate-900 p-6 flex gap-8 items-center flex-1">
+      <div class="flex-1">
+        <p class="text-xs font-semibold uppercase tracking-widest text-amber-400 mb-2">ROI for Café Operators</p>
+        <p class="text-xl font-bold text-white leading-snug mb-3">
+          AI access becomes a low-cost, high-retention loyalty differentiator — no hardware, no subscriptions.
+        </p>
+        <p class="text-sm text-slate-300 leading-relaxed">
+          Customers stay longer, order more, and return to the café that gives them AI.
+          Operators get a co-branded experience, live usage analytics, and a simple integration
+          that prints codes on their existing receipt printer.
+        </p>
+      </div>
+      <div class="flex flex-col gap-3 min-w-fit">
+        <div class="rounded-xl bg-amber-700 px-5 py-3 text-center">
+          <p class="text-2xl font-black text-white">↑ Dwell</p>
+          <p class="text-xs text-amber-200 mt-0.5">More time = more orders</p>
+        </div>
+        <div class="rounded-xl bg-amber-900 px-5 py-3 text-center">
+          <p class="text-2xl font-black text-white">↑ Ticket</p>
+          <p class="text-xs text-amber-300 mt-0.5">Purchase = AI unlock</p>
+        </div>
+        <div class="rounded-xl border border-slate-600 px-5 py-3 text-center">
+          <p class="text-2xl font-black text-amber-400">↑ Return</p>
+          <p class="text-xs text-slate-400 mt-0.5">Habit-forming benefit</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
