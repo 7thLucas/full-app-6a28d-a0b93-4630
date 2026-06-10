@@ -1,0 +1,102 @@
+<style>
+  .mode-landscape .sl-layout {
+    flex-direction: column;
+    padding: 2.5rem 3.5rem;
+  }
+  .mode-portrait .sl-layout {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .mode-landscape .sl-steps {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .mode-portrait .sl-steps {
+    flex-direction: column;
+  }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex flex-col h-full">
+
+    <!-- Header -->
+    <div class="mb-6">
+      <span class="text-xs font-semibold tracking-widest uppercase text-amber-700">User Flow</span>
+      <h2 class="text-3xl font-black text-slate-900 mt-1" style="font-family: 'Georgia', serif; letter-spacing: -0.01em;">From coffee to AI in under a minute.</h2>
+    </div>
+
+    <!-- Steps -->
+    <div class="sl-steps flex gap-3 flex-1">
+
+      <!-- Step 1 -->
+      <div class="flex-1 rounded-2xl bg-amber-50 border border-amber-200 p-5 flex flex-col gap-3">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-full text-xs font-black text-white flex items-center justify-center" style="background:#b45309;">1</span>
+          <span class="text-xs font-semibold uppercase tracking-wider text-amber-800">Order &amp; Pay</span>
+        </div>
+        <p class="text-2xl">☕</p>
+        <p class="text-sm font-semibold text-slate-900">Buy any item at a participating café</p>
+        <p class="text-xs text-slate-600 leading-relaxed">Coffee, food, anything on the menu counts. Your purchase triggers a unique code generation.</p>
+      </div>
+
+      <div class="flex items-center text-slate-300 font-bold text-xl px-1">→</div>
+
+      <!-- Step 2 -->
+      <div class="flex-1 rounded-2xl bg-slate-50 border border-slate-200 p-5 flex flex-col gap-3">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-full text-xs font-black text-white flex items-center justify-center bg-slate-700">2</span>
+          <span class="text-xs font-semibold uppercase tracking-wider text-slate-600">Get the Code</span>
+        </div>
+        <p class="text-2xl">🧾</p>
+        <p class="text-sm font-semibold text-slate-900">Unique code printed on your receipt</p>
+        <p class="text-xs text-slate-600 leading-relaxed">An auto-generated alphanumeric code appears on your printed receipt — single-use, 5-hour TTL.</p>
+      </div>
+
+      <div class="flex items-center text-slate-300 font-bold text-xl px-1">→</div>
+
+      <!-- Step 3 -->
+      <div class="flex-1 rounded-2xl bg-slate-50 border border-slate-200 p-5 flex flex-col gap-3">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-full text-xs font-black text-white flex items-center justify-center bg-slate-700">3</span>
+          <span class="text-xs font-semibold uppercase tracking-wider text-slate-600">Go to Platform</span>
+        </div>
+        <p class="text-2xl">📱</p>
+        <p class="text-sm font-semibold text-slate-900">Scan the QR code on the table or visit caféai.id</p>
+        <p class="text-xs text-slate-600 leading-relaxed">No app download needed. Open the web platform in any browser on your phone or laptop.</p>
+      </div>
+
+      <div class="flex items-center text-slate-300 font-bold text-xl px-1">→</div>
+
+      <!-- Step 4 -->
+      <div class="flex-1 rounded-2xl bg-slate-50 border border-slate-200 p-5 flex flex-col gap-3">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-full text-xs font-black text-white flex items-center justify-center" style="background:#0f766e;">4</span>
+          <span class="text-xs font-semibold uppercase tracking-wider text-teal-700">Enter Code</span>
+        </div>
+        <p class="text-2xl">🔑</p>
+        <p class="text-sm font-semibold text-slate-900">Code validated — 5-hour timer starts</p>
+        <p class="text-xs text-slate-600 leading-relaxed">Type or paste the code. Instant validation; the session clock starts the moment you're in.</p>
+      </div>
+
+      <div class="flex items-center text-slate-300 font-bold text-xl px-1">→</div>
+
+      <!-- Step 5 -->
+      <div class="flex-1 rounded-2xl p-5 flex flex-col gap-3 text-white" style="background: linear-gradient(135deg, #b45309, #92400e);">
+        <div class="flex items-center gap-2">
+          <span class="w-7 h-7 rounded-full text-xs font-black text-amber-800 flex items-center justify-center bg-white">5</span>
+          <span class="text-xs font-semibold uppercase tracking-wider text-amber-200">Chat Away</span>
+        </div>
+        <p class="text-2xl">🤖</p>
+        <p class="text-sm font-semibold">Unlimited AI for the full 5 hours</p>
+        <p class="text-xs text-amber-100 leading-relaxed">Write code, draft essays, brainstorm, research — use AI freely until your session expires.</p>
+      </div>
+
+    </div>
+
+    <!-- Footer note -->
+    <div class="mt-4 text-xs text-slate-400 text-center">
+      Session expires after 5 hours · Buy again to unlock a new session · No data retained after session ends
+    </div>
+
+  </div>
+</section>
